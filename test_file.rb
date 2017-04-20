@@ -4,6 +4,4 @@ greeting= "This is awesome"
 puts greeting
 puts "What's your name?"
 name = gets.chomp
-puts "Hi, #{name}!"
-
-
+puts "Hi, #{name}! Have a great morning!"
