@@ -1,0 +1,22 @@
+# Returns nil instead of intended integer because of debugging
+def add(x,y)
+  sum = x + y
+  puts sum
+end
+add(2,3)
+
+# Still returns the desired integer despite added debug statement
+def add(x,y)
+  sum = x + y
+  p sum
+end
+add(2,5)
+
+# The only way to add a label to the data is to avoid debugging
+# on the last line of a method
+def add(x,y)
+  sum = x + y
+  p "Sum is #{sum}" # puts would also be fine here
+  sum # to make sure the sum is returned instead of our debug statement
+end
+add(2,7)
